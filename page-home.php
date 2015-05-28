@@ -2,7 +2,7 @@
 
 <?php
 
-  $sectionWidth = 'fs-grid fs-lg-11 fs-md-6 fs-sm-3 fs-centered';
+  $sectionWidth = 'fs-grid fs-lg-11 fs-md-6 fs-sm-3 fs-centered text-center';
 
 ?>
 
