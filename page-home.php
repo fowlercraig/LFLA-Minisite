@@ -2,7 +2,7 @@
 
 <?php
 
-  include_once locate_template('parts/minisite/init.php');
+  include_once locate_template('/parts/minisite/init.php');
   $sectionWidth = 'fs-grid fs-lg-11 fs-md-6 fs-sm-3 fs-centered';
 
 ?>
