@@ -1,0 +1,69 @@
+@maincolor: #EDE8E4;
+@orange:    #F3903D;
+@teal:      #70AD94;
+@green:     #8FBA5C;
+
+
+#home--wrapper {
+
+  > section {
+
+    background: @maincolor;
+    border-bottom: 1px solid darken(@maincolor, 5%);
+
+    @media @min {
+      padding: @spaced*2 0;
+    }
+
+    @media @desktop {
+      padding: @spaced*3 0;
+    }
+
+    .section-title {
+      color: @orange;
+      text-transform: uppercase;
+      .font_size(30);
+    }
+
+    > div > div > header {
+
+      padding-bottom: @spaced*2;
+
+      @media @min {
+        padding-bottom: @spaced*1;
+      }
+
+      .section-title {
+        display: inline-block;
+        height: 30px;
+        line-height: 40px;
+        margin: 0;
+      }
+
+      .btn {
+        position: relative;
+        top: -.4em;
+        margin-left: 10px;
+        color: @green;
+      }
+
+    }
+
+  }
+
+}
+
+section#home--events {
+
+  padding-bottom: 0;
+  border-bottom: 0;
+
+}
+
+#home--essays {
+
+  header {
+    border-bottom: 1px solid;
+  }
+
+}

@@ -1,0 +1,131 @@
+.essay {
+
+  border-bottom: 1px solid;
+
+  .btn {
+    color: @green;
+  }
+
+  .wrapper {
+
+    @media @min {
+
+      padding: @spaced @fs-grid-gutter;
+      margin: 0;
+
+      hr {
+        margin: 8px 0;
+      }
+    }
+
+    @media @tablet {
+
+      padding:  @spaced*2 @fs-grid-gutter;
+      margin: 0;
+
+    }
+
+    @media @desktop {
+
+      padding: @spaced*2;
+      margin: @spaced/2 0;
+
+      hr {
+        margin: 15px 0;
+      }
+
+    }
+
+  }
+
+  &:first-child {
+
+    @media @desktop {
+      .wrapper {
+        border-right: 1px solid;
+      }
+    }
+
+  }
+
+  &.last {
+    border-bottom: 0;
+    .wrapper {
+      padding-bottom: 0;
+    }
+  }
+
+  &.full {
+
+    z-index: 9999;
+    background: @white;
+    left: auto;
+    pointer-events: none;
+    opacity: 0;
+    text-align: left;
+    box-shadow: 0 0 15px @black25;
+    right: -20px;
+
+
+    @media @min {
+      width: 100%;
+    }
+
+    @media @tablet {
+      width: 80%;
+    }
+
+    @media @desktop {
+      width: 70%;
+    }
+
+    @media @max {
+      width: 60%;
+    }
+
+    &.clickable {
+
+      pointer-events: auto;
+      opacity: 1;
+
+    }
+
+    p,h1,h2,h3,h4,h5 {
+      color: @textGray;
+    }
+
+    .wrapper {
+      margin: 0;
+    }
+
+    &.fixed {
+      position: fixed;
+      height: 100%;
+      overflow-y: scroll;
+    }
+
+    .essayClose {
+
+      @buttonHeight : 30px;
+
+      height: @buttonHeight;
+      width: @buttonHeight;
+      line-height: @buttonHeight + 1;
+      border: 2px solid @teal;
+      color: @teal;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      .font_size(20);
+      .rotate-45();
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin: 10px;
+
+
+    }
+
+  }
+
+}

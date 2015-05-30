@@ -2,7 +2,7 @@
 
 <?php
 
-  $sectionWidth = 'fs-grid fs-lg-11 fs-md-6 fs-sm-3 fs-centered text-center';
+  $sectionWidth = 'fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered text-center';
 
 ?>
 
@@ -13,6 +13,16 @@
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/header.php' );?></div>
     </div>
   </header>
+
+  <div id="mobile-menu" class="fs-grid">
+    <div class="fs-row">
+      <nav class="fs-cell fs-all-12">
+        <?php if( have_rows('navigation') ): $i = 0; while ( have_rows('navigation') ) : the_row(); ?>
+        <a href="<?php the_sub_field('nav_url'); ?>" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a>
+        <?php endwhile; endif; ?>
+      </nav>
+    </div>
+  </div>
 
   <section id="home--main">
     <div class="fs-row">
