@@ -4475,6 +4475,16 @@ section#home--events {
 #home--header.banner--clone a:hover {
   border-bottom-color: transparent;
 }
+@media screen and (min-width: 300px) {
+  #home--header.banner--clone a.btn-nav {
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--header.banner--clone a.btn-nav {
+    padding-left: 10px;
+  }
+}
 #home--header.banner--clone .hide {
   display: inline-block;
   margin-right: 8px;
