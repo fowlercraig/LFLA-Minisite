@@ -51,6 +51,61 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/img\/banner-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2455,
+		"inputAbbreviatedPath": "\/assets\/img\/banner-bg.png",
+		"outputAbbreviatedPath": "\/assets\/img\/banner-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/ld--bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 279353,
+		"inputAbbreviatedPath": "\/assets\/img\/ld--bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/img\/ld--bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/ld-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11312,
+		"inputAbbreviatedPath": "\/assets\/img\/ld-logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/ld-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/lfla--logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16511,
+		"inputAbbreviatedPath": "\/assets\/img\/lfla--logo.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lfla--logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/starship.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10118,
+		"inputAbbreviatedPath": "\/assets\/img\/starship.png",
+		"outputAbbreviatedPath": "\/assets\/img\/starship.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/js\/scripts.min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -6782,6 +6837,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/src\/less\/site\/_splash.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/less\/site\/_splash.less",
+		"outputAbbreviatedPath": "\/src\/less\/css\/_splash.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/src\/less\/site\/_thanks.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -6995,7 +7070,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "livedine.dev",
+	"externalServerAddress": "liveanddine.lfla.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

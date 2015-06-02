@@ -4218,6 +4218,71 @@ form textarea:focus {
   width: 1px;
   margin: auto;
 }
+body {
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-family: "Sentinel", sans-serif;
+  font-weight: normal;
+}
+h2 {
+  font-family: "franklin-gothic-urw", sans-serif;
+  color: #666666;
+}
+.type-title {
+  font-family: "Sentinel", sans-serif;
+}
+@media screen and (min-width: 500px) {
+  .type-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .type-title {
+    font-size: 32px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .type-title {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .type-title {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+}
+.type-subtitle {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: "franklin-gothic-urw", sans-serif;
+}
+.button,
+.btn {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-family: "franklin-gothic-urw", sans-serif;
+}
+.main-nav {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  font-family: "franklin-gothic-urw", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -4335,8 +4400,7 @@ form textarea:focus {
 .error404 #error-msg h3 a:visited {
   color: #d64242;
 }
-body,
-html {
+body {
   overflow: visible;
 }
 .wrapper {
@@ -4381,8 +4445,31 @@ p {
     line-height: 1.5;
   }
 }
+body {
+  background: #ede8e4 url(/assets/img/ld--bg.jpg);
+  background-color: #eee9e5;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 300px) {
+  body {
+    background-size: 1200px auto;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 500px) {
+  body {
+    background-size: 1700px auto;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 740px) {
+  body {
+    background-size: auto;
+  }
+}
 #home--wrapper > section {
-  background: #ede8e4;
+  background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #home--wrapper > section#home--main {
@@ -4467,7 +4554,7 @@ section#home--events {
 #home--header a {
   color: #3f3f44;
   font-family: 'Gotham', 'Helvetica', arial;
-  font-weight: 300;
+  font-weight: 500;
 }
 @media screen and (min-width: 980px) {
   #home--header a {
@@ -4478,8 +4565,8 @@ section#home--events {
 }
 @media screen and (min-width: 1220px) {
   #home--header a {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 15px;
+    font-size: 0.9375rem;
     letter-spacing: 2px;
   }
 }
@@ -4581,6 +4668,296 @@ section#home--events {
 }
 #mobile-menu nav a:last-child {
   height: 50px;
+}
+section#home--main {
+  padding-bottom: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+@media screen and (min-width: 300px) {
+  #index {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #index {
+    margin-top: 100px;
+  }
+}
+#splash--title h2 {
+  margin-top: 25px;
+  font-family: 'franklin-gothic-urw-cond';
+}
+@media screen and (min-width: 300px) {
+  #splash--title h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 500px) {
+  #splash--title h2 {
+    font-size: 22px;
+    font-size: 1.375rem;
+    text-align: center;
+    line-height: auto;
+  }
+}
+@media screen and (min-width: 740px) {
+  #splash--title h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--title h2 {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #splash--title h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+  }
+}
+#splash--desc {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-family: "Sentinel", sans-serif;
+  color: #f3903d;
+}
+#splash--desc p {
+  color: inherit;
+  font-size: inherit;
+}
+@media screen and (min-width: 300px) {
+  #splash--desc {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--desc {
+    text-align: left;
+  }
+}
+#splash--social {
+  text-align: center;
+  position: relative;
+}
+#splash--social a {
+  color: #8fba5c;
+  height: 32px;
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-size: 2rem;
+}
+#splash--social a i {
+  display: inline-block;
+  height: 32px;
+}
+@media screen and (min-width: 980px) {
+  #splash--social a {
+    display: block;
+  }
+}
+#splash--social span {
+  font-family: 'franklin-gothic-urw-cond';
+  text-transform: uppercase;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  display: none;
+  color: #8fba5c;
+  margin-top: 20px;
+}
+@media screen and (min-width: 980px) {
+  #splash--social span {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    font-size: 24px;
+    font-size: 1.5rem;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+            transform: translateX(-50%) translateY(-50%) rotate(90deg);
+  }
+}
+#splash--empty {
+  font-size: 23px;
+  font-size: 1.4375rem;
+  font-family: 'franklin-gothic-urw-cond';
+}
+@media screen and (min-width: 300px) {
+  #splash--empty {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--empty {
+    text-align: left;
+  }
+}
+#splash--check {
+  font-family: "Sentinel", sans-serif;
+  color: #ffffff;
+}
+#splash--check p {
+  color: inherit;
+}
+@media screen and (min-width: 300px) {
+  #splash--check {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--check {
+    text-align: center;
+  }
+}
+#splash--check .wrapper {
+  background: url(../../assets/img/banner-bg.png);
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+@media screen and (min-width: 300px) {
+  #splash--check .wrapper {
+    background-position: center 25px;
+    padding-bottom: 50px;
+    margin: 0 -15px;
+    background-size: contain;
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  #splash--check .wrapper {
+    background-position: center 25px;
+    padding-bottom: 50px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin: 0;
+    background-size: auto;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--check .wrapper {
+    margin-left: -25px;
+    background-position: left 25px;
+    padding-bottom: 30px;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #splash--check .wrapper {
+    background-size: auto;
+  }
+}
+#splash--links {
+  font-family: 'franklin-gothic-urw-cond';
+  text-align: center;
+  text-transform: uppercase;
+}
+#splash--links .wrapper {
+  padding-bottom: 0;
+}
+@media screen and (min-width: 300px) {
+  #splash--links {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  #splash--links {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+#splash--links a {
+  text-decoration: underline;
+}
+@media screen and (min-width: 980px) {
+  #starship {
+    margin-top: 50px;
+    margin-left: -3px;
+  }
+}
+#splash--follow {
+  font-family: "Sentinel", sans-serif;
+  text-align: center;
+  color: #f3903d;
+}
+#splash--follow span {
+  font-size: 16px;
+  font-size: 1rem;
+}
+#splash--follow a {
+  color: #f3903d;
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+hr.divider {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+.fs-cell p:last-child {
+  margin-bottom: 0;
+}
+.rightside {
+  position: relative;
+}
+.rightside:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+@media screen and (min-width: 980px) {
+  .rightside:after {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
+.leftside {
+  position: relative;
+}
+.leftside:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+@media screen and (min-width: 980px) {
+  .leftside:after {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+  }
+}
+@media screen and (min-width: 300px) {
+  .wrapper {
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  .wrapper {
+    padding: 20px;
+  }
+}
+.wrapper.no-pad--left {
+  padding-left: 0;
+}
+.wrapper.no-pad--right {
+  padding-right: 0;
+}
+.wrapper.no-pad--top {
+  padding-top: 0;
+}
+.wrapper.no-pad--bottom {
+  padding-bottom: 0;
 }
 #packeryContainer {
   opacity: 0;

@@ -43,11 +43,34 @@ p {
 
 }
 
+body {
+
+  background: @maincolor url(/assets/img/ld--bg.jpg);
+  background-color: RGBA(238, 233, 229, 1);
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  @media @min {
+    background-size: 1200px auto;
+    background-repeat: no-repeat;
+  }
+
+  @media @mobile {
+    background-size: 1700px auto;
+    background-repeat: no-repeat;
+  }
+
+  @media @tablet {
+    background-size: auto;
+  }
+
+}
+
 #home--wrapper {
 
   > section {
 
-    background: @maincolor;
+    background: none;
     border-bottom: 1px solid @bordercolor;
 
     &#home--main {

@@ -8,6 +8,12 @@
 
 <div id="home--wrapper">
 
+  <header id="home--header">
+    <div class="fs-row">
+      <div id="home--header-wrap" class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/header.php' );?></div>
+    </div>
+  </header>
+
   <div id="mobile-menu" class="fs-grid">
     <div class="fs-row">
       <nav class="fs-cell fs-all-12">
@@ -23,12 +29,6 @@
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/main.php' );?></div>
     </div>
   </section>
-
-  <header id="home--header">
-    <div class="fs-row">
-      <div id="home--header-wrap" class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/header.php' );?></div>
-    </div>
-  </header>
 
   <section id="home--events">
     <div class="fs-row">

@@ -1,0 +1,292 @@
+section#home--main {
+
+  padding-bottom: 0;
+  border-bottom: 1px solid @bordercolor!important;
+
+}
+
+#index {
+
+  @media @min {
+    margin-top: @spaced;
+  }
+
+  @media @desktop {
+    margin-top: 100px;
+  }
+
+}
+
+#splash--title h2 {
+  margin-top: @spaced;
+  font-family: 'franklin-gothic-urw-cond';
+
+  @media @min {
+    .font_size(24);
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  @media @mobile {
+    .font_size(22);
+    text-align: center;
+    line-height: auto;
+  }
+
+  @media @tablet {
+    .font_size(27);
+    text-align: center;
+  }
+
+  @media @desktop {
+    .font_size(25);
+  }
+
+  @media @max {
+    .font_size(27);
+  }
+
+}
+
+#splash--desc {
+
+  .font_size(23);
+  font-family: @font-fam-titles;
+  color: @orange;
+  p { color: inherit; font-size: inherit;}
+
+  @media @min {
+    text-align: center;
+  }
+
+  @media @desktop {
+    text-align: left;
+  }
+
+}
+
+#splash--social {
+  text-align: center;
+  position: relative;
+  a {
+    color: @green;
+    height: 32px;
+    margin-bottom: 5px;
+    .font_size(32);
+    i {
+      display: inline-block;
+      height: 32px;
+    }
+    @media @desktop {
+      display: block;
+    }
+  }
+  span {
+    font-family: 'franklin-gothic-urw-cond';
+    text-transform: uppercase;
+    .font_size(15);
+    display: none;
+    color: @green;
+    margin-top: @spaced/1.25;
+    @media @desktop {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      .font_size(24);
+      transform:  translateX(-50%) translateY(-50%) rotate(90deg);
+    }
+  }
+}
+
+#splash--empty {
+
+  .font_size(23);
+  font-family: 'franklin-gothic-urw-cond';
+
+  @media @min {
+    text-align: center;
+  }
+
+  @media @desktop {
+    text-align: left;
+  }
+
+}
+
+#splash--check {
+
+  font-family: @font-fam-titles;
+  color: @white;
+  p { color: inherit;}
+
+  @media @min {
+    text-align: center;
+  }
+
+  @media @desktop {
+    text-align: center;
+  }
+
+  .wrapper {
+    background: url(../../assets/img/banner-bg.png);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    @media @min {
+      background-position: center 25px;
+      padding-bottom: 50px;
+      margin: 0 -15px;
+      background-size: contain;
+      .font_size(16);
+    }
+
+    @media @mobile {
+      background-position: center 25px;
+      padding-bottom: 50px;
+      .font_size(24);
+      margin: 0;
+      background-size: auto;
+    }
+
+    @media @desktop {
+      margin-left: -25px;
+      background-position: left 25px;
+      padding-bottom: 30px;
+      background-size: contain;
+    }
+
+    @media @max {
+      background-size: auto;
+    }
+  }
+
+}
+
+#splash--links {
+
+
+  font-family: 'franklin-gothic-urw-cond';
+  text-align: center;
+  text-transform: uppercase;
+
+  .wrapper {
+    padding-bottom: 0;
+  }
+
+  @media @min {
+    .font_size(15);
+  }
+
+  @media @desktop {
+    .font_size(12);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+}
+
+#starship {
+
+  @media @desktop {
+    margin-top: 50px;
+    margin-left: -3px;
+  }
+
+}
+
+#splash--follow {
+
+  font-family: "Sentinel", sans-serif;
+  text-align: center;
+
+  color: @orange;
+
+  span {
+    .font_size(16);
+  }
+
+  a {
+    color: @orange;
+    .font_size(28);
+  }
+
+}
+
+
+
+hr.divider {
+  margin: 0;
+  background: @black25;
+}
+
+.fs-cell {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.rightside {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    @media @desktop {
+      border-right: 1px solid @black25;
+    }
+  }
+}
+
+.leftside {
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @media @desktop {
+      border-left: 1px solid @black25;
+    }
+  }
+}
+
+.wrapper {
+
+  @media @min {
+
+    padding: 15px 0;
+
+  }
+
+  @media @desktop {
+
+    padding: @spaced - 5px;
+
+  }
+
+  &.no-pad--left {
+    padding-left: 0;
+  }
+
+  &.no-pad--right {
+    padding-right: 0;
+  }
+
+  &.no-pad--top {
+    padding-top: 0;
+  }
+
+  &.no-pad--bottom {
+    padding-bottom: 0;
+  }
+
+}
