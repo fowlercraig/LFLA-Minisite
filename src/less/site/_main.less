@@ -1,15 +1,44 @@
-@maincolor: #EDE8E4;
-@orange:    #F3903D;
-@teal:      #70AD94;
-@green:     #8FBA5C;
+@maincolor:   #EDE8E4;
+@orange:      #F3903D;
+@teal:        #70AD94;
+@green:       #8FBA5C;
+@bordercolor: rgba(0,0,0,.35);
+@font-weight : 300;
 
+.gotham(@font-weight){
+  font-family: 'Gotham','Helvetica', arial;
+  font-weight: @font-weight;
+}
+
+@font-style : normal;
+
+.serif(@font-weight){
+  font-family: 'Caslon','Times', arial;
+  font-style: '@font-style';
+  font-weight: 300;
+}
+
+.btn {
+  .gotham(500);
+}
+
+.cover-link {
+  .cover();
+  z-index: 5;
+}
+
+p {
+  .serif(normal);
+  .font_size(22);
+  color: @black;
+}
 
 #home--wrapper {
 
   > section {
 
     background: @maincolor;
-    border-bottom: 1px solid darken(@maincolor, 5%);
+    border-bottom: 1px solid @bordercolor;
 
     @media @min {
       padding: @spaced*2 0;
@@ -22,7 +51,9 @@
     .section-title {
       color: @orange;
       text-transform: uppercase;
-      .font_size(30);
+      .font_size(32);
+      line-height: 1;
+      .gotham(900);
     }
 
     > div > div > header {

@@ -3818,6 +3818,45 @@ th {
 .ss-rss.right:after {
   content: '';
 }
+/* Gotham Medium */
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/GothamMedium.eot');
+  src: url('/assets/fonts/GothamMedium.eot') format('embedded-opentype'), url('/assets/fonts/GothamMedium.woff2') format('woff2'), url('/assets/fonts/GothamMedium.woff') format('woff'), url('/assets/fonts/GothamMedium.ttf') format('truetype'), url('/assets/fonts/GothamMedium.svg#GothamMedium') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+/* Gotham Bold */
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/GothamBold.eot');
+  src: url('/assets/fonts/GothamBold.eot') format('embedded-opentype'), url('/assets/fonts/GothamBold.woff2') format('woff2'), url('/assets/fonts/GothamBold.woff') format('woff'), url('/assets/fonts/GothamBold.ttf') format('truetype'), url('/assets/fonts/GothamBold.svg#GothamBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+/* Gotham Black */
+@font-face {
+  font-family: 'Gotham';
+  src: url('/assets/fonts/GothamBlack.eot');
+  src: url('/assets/fonts/GothamBlack.eot') format('embedded-opentype'), url('/assets/fonts/GothamBlack.woff2') format('woff2'), url('/assets/fonts/GothamBlack.woff') format('woff'), url('/assets/fonts/GothamBlack.ttf') format('truetype'), url('/assets/fonts/GothamBlack.svg#GothamBlack') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/* Adobe Caslon */
+@font-face {
+  font-family: 'Caslon';
+  src: url('/assets/fonts/ACaslonProRegular.eot');
+  src: url('/assets/fonts/ACaslonProRegular.eot') format('embedded-opentype'), url('/assets/fonts/ACaslonProRegular.woff2') format('woff2'), url('/assets/fonts/ACaslonProRegular.woff') format('woff'), url('/assets/fonts/ACaslonProRegular.ttf') format('truetype'), url('/assets/fonts/ACaslonProRegular.svg#ACaslonProRegular') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caslon';
+  src: url('/assets/fonts/ACaslonProItalic.eot');
+  src: url('/assets/fonts/ACaslonProItalic.eot') format('embedded-opentype'), url('/assets/fonts/ACaslonProItalic.woff2') format('woff2'), url('/assets/fonts/ACaslonProItalic.woff') format('woff'), url('/assets/fonts/ACaslonProItalic.ttf') format('truetype'), url('/assets/fonts/ACaslonProItalic.svg#ACaslonProItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+}
 .bg.green {
   background: #8fba5c;
 }
@@ -4310,9 +4349,29 @@ html {
   top: 0;
   width: 100%;
 }
+.btn {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 500;
+}
+.cover-link {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+p {
+  font-family: 'Caslon', 'Times', arial;
+  font-style: '@font-style';
+  font-weight: 300;
+  font-size: 22px;
+  font-size: 1.375rem;
+  color: #3f3f44;
+}
 #home--wrapper > section {
   background: #ede8e4;
-  border-bottom: 1px solid #e3dbd5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 @media screen and (min-width: 300px) {
   #home--wrapper > section {
@@ -4327,8 +4386,11 @@ html {
 #home--wrapper > section .section-title {
   color: #f3903d;
   text-transform: uppercase;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
 }
 #home--wrapper > section > div > div > header {
   padding-bottom: 50px;
@@ -4360,7 +4422,8 @@ section#home--events {
 #home--header {
   position: relative;
   z-index: 10;
-  background: #ffffff;
+  background: #ede8e4;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
 }
 @media screen and (min-width: 300px) {
   #home--header {
@@ -4372,6 +4435,25 @@ section#home--events {
     display: block;
   }
 }
+#home--header a {
+  color: #3f3f44;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+}
+@media screen and (min-width: 980px) {
+  #home--header a {
+    font-size: 14px;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--header a {
+    font-size: 16px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
 #home--header.banner--clone {
   position: fixed;
   display: block;
@@ -4380,7 +4462,7 @@ section#home--events {
   width: 100%;
   margin: 0;
   z-index: 999;
-  background: #ffffff;
+  border-bottom: none;
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%);
@@ -4401,6 +4483,7 @@ section#home--events {
   display: none;
 }
 #home--header.banner--stick {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.35);
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
@@ -4460,6 +4543,9 @@ section#home--events {
 #mobile-menu nav a:last-child {
   height: 50px;
 }
+#packeryContainer {
+  opacity: 0;
+}
 .event {
   background-size: cover;
   background-position: center center;
@@ -4474,6 +4560,8 @@ section#home--events {
 .event h5 {
   color: #ffffff;
   text-transform: uppercase;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
 }
 .event h4 {
   margin-bottom: 0;
@@ -4493,6 +4581,7 @@ section#home--events {
 .event h3 {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 1.2;
 }
 @media screen and (min-width: 980px) {
   .event h3 {
@@ -4504,6 +4593,18 @@ section#home--events {
   .event h3 {
     font-size: 32px;
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .event.jumbo h3 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .event.jumbo h3 {
+    font-size: 48px;
+    font-size: 3rem;
   }
 }
 .event {
@@ -4557,6 +4658,38 @@ section#home--events {
 .essay .btn {
   color: #8fba5c;
 }
+.essay h3 {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 500;
+}
+@media screen and (min-width: 300px) {
+  .essay p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 740px) {
+  .essay p {
+    font-size: 23px;
+    font-size: 1.4375rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 980px) {
+  .essay p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .essay p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
 @media screen and (min-width: 300px) {
   .essay .wrapper {
     padding: 25px 1.04166667%;
@@ -4582,8 +4715,8 @@ section#home--events {
   }
 }
 @media screen and (min-width: 980px) {
-  .essay:first-child .wrapper {
-    border-right: 1px solid;
+  .essay#essay-2 .wrapper {
+    border-left: 1px solid;
   }
 }
 .essay.last {
@@ -4594,12 +4727,10 @@ section#home--events {
 }
 .essay.full {
   z-index: 9999;
-  background: #ffffff;
   left: auto;
   pointer-events: none;
   opacity: 0;
   text-align: left;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   right: -20px;
 }
 @media screen and (min-width: 300px) {
@@ -4635,7 +4766,10 @@ section#home--events {
   color: #666666;
 }
 .essay.full .wrapper {
-  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  background: #ffffff;
 }
 .essay.full.fixed {
   position: fixed;
@@ -4646,8 +4780,8 @@ section#home--events {
   height: 30px;
   width: 30px;
   line-height: 31px;
-  border: 2px solid #70ad94;
-  color: #70ad94;
+  border: 2px solid #e7e7ec;
+  color: #e7e7ec;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -4662,5 +4796,112 @@ section#home--events {
   position: fixed;
   top: 0;
   right: 0;
-  margin: 10px;
+  margin: 30px 10px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+.essay.full .essayClose:hover {
+  color: #70ad94;
+  border-color: #70ad94;
+}
+#home--tumblr {
+  position: relative;
+  border: 0;
+  background: #3f3f44;
+  margin-top: -1px;
+  overflow: hidden;
+  color: #ffffff;
+}
+#home--tumblr h3.section-title {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+#home--tumblr p {
+  color: inherit;
+}
+@media screen and (min-width: 300px) {
+  #home--tumblr {
+    min-height: 350px;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--tumblr {
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--tumblr {
+    min-height: 450px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--tumblr {
+    min-height: 500px;
+  }
+}
+#home--tumblr-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+#home--tumblr-gallery {
+  background: #3f3f44;
+}
+#home--tumblr .gallery-background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#home--thanks p {
+  margin-bottom: 25px;
+}
+#home--thanks p strong {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+#home--thanks p:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 300px) {
+  #home--thanks .wrapper {
+    padding: 25px 1.04166667%;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--thanks .wrapper {
+    padding: 50px 1.04166667%;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--thanks .wrapper {
+    padding: 50px;
+  }
+}
+#home--thanks-first .wrapper {
+  padding-top: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+@media screen and (min-width: 300px) {
+  #home--thanks-second .wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--thanks-second .wrapper {
+    border-bottom: 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--thanks-second .wrapper {
+    border-right: 1px solid rgba(0, 0, 0, 0.35);
+  }
 }

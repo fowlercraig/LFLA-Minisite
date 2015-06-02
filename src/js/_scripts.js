@@ -3,6 +3,14 @@
 // @codekit-prepend "site/_smoothscroll.js"
 // @codekit-prepend "site/_mobilenav.js"
 
+function randos(){
+
+  $("#home--essays, #home--thanks").equalize({
+    target: ".equal"
+  });
+
+}
+
 function header(){
 
 var options = {
@@ -31,5 +39,6 @@ $(document).ready(function(){
   packeryTime();
   openEssay();
   header();
+  randos();
 
 });

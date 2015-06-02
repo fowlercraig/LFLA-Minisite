@@ -13,7 +13,7 @@
 
     } else {
 
-      $essayWidth = 'fs-lg-6';
+      $essayWidth = 'equal fs-lg-6';
 
     }
   ?>

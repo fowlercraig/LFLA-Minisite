@@ -2,8 +2,37 @@
 
   border-bottom: 1px solid;
 
+
   .btn {
     color: @green;
+  }
+
+  h3 {
+    .gotham(500);
+  }
+
+  p {
+
+    @media @min {
+      .font_size(20);
+      line-height: 1.5;
+    }
+
+    @media @tablet {
+      .font_size(23);
+      line-height: 1.5;
+    }
+
+    @media @desktop {
+      .font_size(20);
+      line-height: 1.5;
+    }
+
+    @media @max {
+      .font_size(24);
+      line-height: 1.5;
+    }
+
   }
 
   .wrapper {
@@ -38,11 +67,11 @@
 
   }
 
-  &:first-child {
+  &#essay-2 {
 
     @media @desktop {
       .wrapper {
-        border-right: 1px solid;
+        border-left: 1px solid;
       }
     }
 
@@ -58,12 +87,11 @@
   &.full {
 
     z-index: 9999;
-    background: @white;
     left: auto;
     pointer-events: none;
     opacity: 0;
     text-align: left;
-    box-shadow: 0 0 15px @black25;
+
     right: -20px;
 
 
@@ -95,7 +123,10 @@
     }
 
     .wrapper {
-      margin: 0;
+      margin-top: 15px;
+      margin-left: 15px;
+      box-shadow: 0 0 15px @black25;
+      background: @white;
     }
 
     &.fixed {
@@ -111,8 +142,8 @@
       height: @buttonHeight;
       width: @buttonHeight;
       line-height: @buttonHeight + 1;
-      border: 2px solid @teal;
-      color: @teal;
+      border: 2px solid @lighterGray;
+      color: @lighterGray;
       border-radius: 50%;
       display: inline-block;
       text-align: center;
@@ -121,7 +152,13 @@
       position: fixed;
       top: 0;
       right: 0;
-      margin: 10px;
+      margin: 30px 10px;
+      transition: 300ms ease;
+
+      &:hover {
+        color: @teal;
+        border-color: @teal;
+      }
 
 
     }

@@ -10,7 +10,7 @@
 
   <header id="home--header">
     <div class="fs-row">
-      <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/header.php' );?></div>
+      <div id="home--header-wrap" class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/header.php' );?></div>
     </div>
   </header>
 

@@ -1,0 +1,55 @@
+#home--tumblr {
+
+  position: relative;
+  border: 0;
+  background: @black;
+  margin-top: -1px;
+  overflow: hidden;
+
+  h3.section-title{
+    color: @white;
+    margin-bottom: 0;
+  }
+
+  color: @white;
+
+  p {
+    color: inherit;
+  }
+
+  @minHeight: 500px;
+
+  @media @min {
+    min-height: @minHeight - 150;
+  }
+
+  @media @tablet {
+    min-height: @minHeight - 100;
+  }
+
+  @media @desktop {
+    min-height: @minHeight - 50;
+  }
+
+  @media @max {
+    min-height: @minHeight;
+  }
+
+  &-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+
+  &-gallery {
+    background: @black;
+  }
+
+  .gallery-background {
+    .cover();
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+}

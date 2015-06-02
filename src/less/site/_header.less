@@ -2,7 +2,8 @@
 
   position: relative;
   z-index: 10;
-  background: @white;
+  background: @maincolor;
+  border-bottom: 1px solid @bordercolor;
 
   @media @min {
     display: none;
@@ -10,6 +11,23 @@
 
   @media @desktop {
     display: block;
+  }
+
+  a {
+
+    color: @black;
+    .gotham(300);
+
+    @media @desktop {
+      .font_size(14);
+      letter-spacing: 1px;
+    }
+
+    @media @max {
+      .font_size(16);
+      letter-spacing: 2px;
+    }
+
   }
 
   &.banner--clone {
@@ -20,7 +38,8 @@
     width: 100%;
     margin: 0;
     z-index: 999;
-    background: @white;
+    //background: @white;
+    border-bottom: none;
     -webkit-transform:translateY(-100%);
     -ms-transform:translateY(-100%);
     transform:translateY(-100%);
@@ -52,6 +71,7 @@
   }
 
   &.banner--stick {
+    box-shadow: 0 0 10px lighten(@bordercolor, 50%);
     -webkit-transform:translateY(0%);
     -ms-transform:translateY(0%);
     transform:translateY(0%)
