@@ -7,7 +7,7 @@ function randos(){
 
   $("#home--essays, #home--thanks").equalize({
     target: ".equal",
-    minWidth: '740px',
+    minWidth: '500px',
   });
 
 }

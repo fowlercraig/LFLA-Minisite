@@ -9,16 +9,16 @@
   <?php
     if ($i == 3){
 
-      $essayWidth = 'last fs-lg-12';
+      $essayWidth = 'last fs-lg-12 fs-md-6 fs-sm-3';
 
     } else {
 
-      $essayWidth = 'equal fs-lg-6';
+      $essayWidth = 'equal fs-lg-6 fs-md-3 fs-sm-half fs-xs-3';
 
     }
   ?>
 
-  <div id="essay-<?php echo $i; ?>" class="essay fs-cell <?php echo $essayWidth ; ?> fs-md-6 fs-sm-3 fs-contained">
+  <div id="essay-<?php echo $i; ?>" class="essay fs-cell <?php echo $essayWidth ; ?> fs-contained">
     <div class="wrapper">
       <h3><?php the_sub_field('essay_title'); ?></h3>
       <?php the_sub_field('essay_teaser'); ?>

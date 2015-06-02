@@ -1,6 +1,6 @@
 <main id="index">
   <div class="fs-row">
-    <div class="fs-cell fs-xl-7 fs-lg-7 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-xl-7 fs-lg-8 fs-md-5 fs-sm-2 fs-xs-3 fs-centered">
       <div class="fs-row">
         <div id="splash--title"  class="fs-cell-padded fs-all-12 text-center">
           <img src="assets/img/ld-logo.png" class="img-responsive" />
@@ -13,7 +13,7 @@
             <?php the_field('splash_description'); ?>
           </div>
         </div>
-        <hr class="divider fs-cell fs-lg-hide fs-md-6 fs-sm-3">
+        <hr class="divider fs-cell fs-lg-hide fs-md-hide fs-sm-hide">
         <div id="splash--social" class="fs-cell-padded fs-lg-2"><!-- @include splash/_social --></div>
 
         <hr class="divider fs-cell fs-all-12">
