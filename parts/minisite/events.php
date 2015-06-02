@@ -15,26 +15,26 @@
     $i++; if( $i > 4 ) { break; }
 
     $eventWidth = 'fs-cell fs-lg-3 fs-md-6 fs-sm-3 fs-contained normal';
-    $backbone   = 'http://placehold.it/800x800/fff/fff';
+    $backbone   = '/assets/img/800x800.gif';
 
     if (get_sub_field('event_wide')) {
 
       $eventWidth = 'fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained wide';
-      $backbone   = 'http://placehold.it/800x400/fff/fff';
+      $backbone   = '/assets/img/800x400.gif';
 
     }
 
     if (get_sub_field('event_tall')) {
 
       $eventWidth = 'fs-cell fs-lg-4 fs-md-6 fs-sm-3 fs-contained tall';
-      $backbone   = 'http://placehold.it/400x800/fff/fff">';
+      $backbone   = '/assets/img/400x800.gif';
 
     }
 
     if (get_sub_field('event_wide') && get_sub_field('event_tall')) {
 
       $eventWidth = 'fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained jumbo';
-      $backbone   = 'http://placehold.it/800x800/fff/fff';
+      $backbone   = '/assets/img/800x800.gif';
 
     }
 
