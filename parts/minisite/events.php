@@ -26,7 +26,7 @@
 
     if (get_sub_field('event_tall')) {
 
-      $eventWidth = 'fs-cell fs-lg-4 fs-md-6 fs-sm-3 fs-contained tall';
+      $eventWidth = 'fs-cell fs-lg-3 fs-md-6 fs-sm-3 fs-contained tall';
       $backbone   = '/assets/img/400x800.gif';
 
     }
@@ -56,7 +56,7 @@
 
   <div class="event <?php echo $eventWidth; ?> text-left" style="background-image:url(<?php echo $thumb; ?>);">
     <div class="meta">
-      <a class="wrapper cover" href="#">
+      <a class="wrapper cover-link" href="#">
         <h4><?php the_sub_field('event_date'); ?></h4>
         <h3><?php the_sub_field('event_title'); ?></h3>
       </a>
