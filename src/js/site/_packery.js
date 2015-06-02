@@ -1,6 +1,6 @@
 function packeryTime(){
 
-  var $container = $('#packeryContainer');
+  var $container = $('.packeryContainer');
 
   $container.css({
     opacity:0,

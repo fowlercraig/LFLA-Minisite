@@ -4412,6 +4412,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 3;
 }
 .btn {
   font-family: 'Gotham', 'Helvetica', arial;
@@ -4423,6 +4424,7 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 3;
   z-index: 5;
 }
 p {
@@ -4534,6 +4536,9 @@ section#home--events {
 }
 #home--essays header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+section#home--thanks {
+  border-bottom: 0;
 }
 #home--header {
   position: relative;
@@ -5270,6 +5275,7 @@ hr.divider {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 3;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -5282,6 +5288,90 @@ hr.divider {
   #home--tumblr .gallery-background {
     background-position: center center;
   }
+}
+.book {
+  position: relative;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 300px) {
+  .book {
+    text-align: center;
+    margin-bottom: 12.5px;
+  }
+}
+.book .wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  margin-top: 3px;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+  opacity: 0;
+}
+@media screen and (min-width: 300px) {
+  .book .wrapper {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .book .wrapper {
+    padding: 12.5px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .book .wrapper {
+    padding: 25px;
+  }
+}
+.book:hover .wrapper {
+  margin-top: 0;
+  opacity: 1;
+}
+.book h3 {
+  color: #ffffff;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 300px) {
+  .book h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 500px) {
+  .book h3 {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (min-width: 740px) {
+  .book h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+.book h4 {
+  color: #ffffff;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+}
+.book .cover {
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+}
+.book:hover .cover {
+  background: rgba(0, 0, 0, 0.75);
 }
 #home--thanks p {
   margin-bottom: 25px;

@@ -30,29 +30,37 @@
     </div>
   </section>
 
+  <?php if (!get_field('publish_section_events')): ?>
   <section id="home--events">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/events.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
+  <?php if (!get_field('publish_section_essays')): ?>
   <section id="home--essays">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/essays.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
+  <?php if (!get_field('publish_section_lamenu')): ?>
   <section id="home--lamenu">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/lamenu.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
+  <?php if (!get_field('publish_section_rr')): ?>
   <section id="home--rr">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/rr.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
   <section id="home--tumblr">
     <div class="fs-row">
@@ -60,17 +68,21 @@
     </div>
   </section>
 
+  <?php if (!get_field('publish_section_hash')): ?>
   <section id="home--social">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/social.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
+  <?php if (!get_field('publish_section_thanks')): ?>
   <section id="home--thanks">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/thanks.php' );?></div>
     </div>
   </section>
+  <?php endif; ?>
 
   <footer id="home--footer">
     <div class="fs-row">

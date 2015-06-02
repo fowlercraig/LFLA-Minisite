@@ -4,7 +4,7 @@
 </header>
 
 <div class="fs-row">
-  <div class="fs-cell fs-all-full" id="packeryContainer">
+  <div class="fs-cell fs-all-full packeryContainer" id="packeryContainer">
 
   <?php if( have_rows('events') ): $i = 0; while ( have_rows('events') ) : the_row(); ?>
 

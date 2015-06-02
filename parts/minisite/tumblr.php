@@ -1,4 +1,4 @@
-<!--<a href="<?php the_field('tumblr_link'); ?>" class="cover-link"></a>-->
+<a href="<?php the_field('tumblr_link'); ?>" class="cover-link"></a>
 
 <div id="home--tumblr-container" class="fs-grid">
   <div class="fs-row">
