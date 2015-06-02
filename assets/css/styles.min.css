@@ -4747,6 +4747,11 @@ section#home--main {
     text-align: left;
   }
 }
+@media screen and (min-width: 300px) {
+  #splash--desc {
+    border-bottom: 0;
+  }
+}
 #splash--social {
   text-align: center;
   position: relative;
