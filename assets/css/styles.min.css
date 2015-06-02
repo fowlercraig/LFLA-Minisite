@@ -4365,9 +4365,21 @@ p {
   font-family: 'Caslon', 'Times', arial;
   font-style: '@font-style';
   font-weight: 300;
-  font-size: 22px;
-  font-size: 1.375rem;
   color: #3f3f44;
+}
+@media screen and (min-width: 300px) {
+  p {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+}
+@media screen and (min-width: 740px) {
+  p {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 1.5;
+  }
 }
 #home--wrapper > section {
   background: #ede8e4;
@@ -4389,11 +4401,23 @@ p {
 #home--wrapper > section .section-title {
   color: #f3903d;
   text-transform: uppercase;
-  font-size: 32px;
-  font-size: 2rem;
   line-height: 1;
   font-family: 'Gotham', 'Helvetica', arial;
   font-weight: 900;
+}
+@media screen and (min-width: 300px) {
+  #home--wrapper > section .section-title {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--wrapper > section .section-title {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
 @media screen and (min-width: 300px) {
   #home--wrapper > section > div > div > header {
@@ -4821,7 +4845,7 @@ section#home--events {
 }
 #home--tumblr {
   position: relative;
-  border: 0;
+  border: 0!important;
   background: #3f3f44;
   margin-top: -1px;
   overflow: hidden;

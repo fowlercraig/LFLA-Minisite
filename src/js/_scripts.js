@@ -6,7 +6,8 @@
 function randos(){
 
   $("#home--essays, #home--thanks").equalize({
-    target: ".equal"
+    target: ".equal",
+    minWidth: '740px',
   });
 
 }

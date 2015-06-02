@@ -29,8 +29,18 @@
 
 p {
   .serif(normal);
-  .font_size(22);
   color: @black;
+
+  @media @min {
+    .font_size(20);
+    line-height: 1.4;
+  }
+
+  @media @tablet {
+    .font_size(22);
+    line-height: 1.5;
+  }
+
 }
 
 #home--wrapper {
@@ -55,9 +65,19 @@ p {
     .section-title {
       color: @orange;
       text-transform: uppercase;
-      .font_size(32);
+
       line-height: 1;
       .gotham(900);
+
+      @media @min {
+        .font_size(24);
+        line-height: 1.2;
+      }
+
+      @media @tablet {
+        .font_size(32);
+        line-height: 1;
+      }
     }
 
     > div > div > header {
