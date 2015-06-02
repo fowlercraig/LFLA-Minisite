@@ -15,26 +15,26 @@
     $i++; if( $i > 4 ) { break; }
 
     $eventWidth = 'fs-cell fs-lg-3 fs-md-6 fs-sm-3 fs-contained normal';
-    $backbone   = '/assets/img/800x800.gif';
+    $backbone   = 'http://placehold.it/800x800/fff/fff';
 
     if (get_sub_field('event_wide')) {
 
       $eventWidth = 'fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained wide';
-      $backbone   = '/assets/img/800x400.gif';
+      $backbone   = 'http://placehold.it/800x400/fff/fff';
 
     }
 
     if (get_sub_field('event_tall')) {
 
-      $eventWidth = 'fs-cell fs-lg-3 fs-md-6 fs-sm-3 fs-contained tall';
-      $backbone   = '/assets/img/400x800.gif';
+      $eventWidth = 'fs-cell fs-lg-4 fs-md-6 fs-sm-3 fs-contained tall';
+      $backbone   = 'http://placehold.it/400x800/fff/fff">';
 
     }
 
     if (get_sub_field('event_wide') && get_sub_field('event_tall')) {
 
       $eventWidth = 'fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-contained jumbo';
-      $backbone   = '/assets/img/800x800.gif';
+      $backbone   = 'http://placehold.it/800x800/fff/fff';
 
     }
 
@@ -56,7 +56,7 @@
 
   <div class="event <?php echo $eventWidth; ?> text-left" style="background-image:url(<?php echo $thumb; ?>);">
     <div class="meta">
-      <a class="wrapper cover-link" href="#">
+      <a class="wrapper cover" href="#">
         <h4><?php the_sub_field('event_date'); ?></h4>
         <h3><?php the_sub_field('event_title'); ?></h3>
       </a>
