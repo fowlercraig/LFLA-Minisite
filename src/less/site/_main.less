@@ -2,7 +2,7 @@
 @orange:      #F3903D;
 @teal:        #70AD94;
 @green:       #8FBA5C;
-@bordercolor: rgba(0,0,0,.35);
+@bordercolor: rgba(0,0,0,.30);
 @font-weight : 300;
 
 .gotham(@font-weight){
@@ -40,12 +40,16 @@ p {
     background: @maincolor;
     border-bottom: 1px solid @bordercolor;
 
+    &#home--main {
+      border-bottom: 0;
+    }
+
     @media @min {
       padding: @spaced*2 0;
     }
 
     @media @desktop {
-      padding: @spaced*3 0;
+      padding: @spaced*2 0;
     }
 
     .section-title {
@@ -58,10 +62,12 @@ p {
 
     > div > div > header {
 
-      padding-bottom: @spaced*2;
-
       @media @min {
         padding-bottom: @spaced*1;
+      }
+
+      @media @desktop {
+        padding-bottom: @spaced*2;
       }
 
       .section-title {
@@ -94,7 +100,7 @@ section#home--events {
 #home--essays {
 
   header {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid @bordercolor;
   }
 
 }

@@ -4371,7 +4371,10 @@ p {
 }
 #home--wrapper > section {
   background: #ede8e4;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+#home--wrapper > section#home--main {
+  border-bottom: 0;
 }
 @media screen and (min-width: 300px) {
   #home--wrapper > section {
@@ -4380,7 +4383,7 @@ p {
 }
 @media screen and (min-width: 980px) {
   #home--wrapper > section {
-    padding: 75px 0;
+    padding: 50px 0;
   }
 }
 #home--wrapper > section .section-title {
@@ -4392,12 +4395,14 @@ p {
   font-family: 'Gotham', 'Helvetica', arial;
   font-weight: 900;
 }
-#home--wrapper > section > div > div > header {
-  padding-bottom: 50px;
-}
 @media screen and (min-width: 300px) {
   #home--wrapper > section > div > div > header {
     padding-bottom: 25px;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--wrapper > section > div > div > header {
+    padding-bottom: 50px;
   }
 }
 #home--wrapper > section > div > div > header .section-title {
@@ -4417,13 +4422,13 @@ section#home--events {
   border-bottom: 0;
 }
 #home--essays header {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #home--header {
   position: relative;
   z-index: 10;
   background: #ede8e4;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 300px) {
   #home--header {
@@ -4493,7 +4498,7 @@ section#home--events {
   display: none;
 }
 #home--header.banner--stick {
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.35);
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
@@ -4663,7 +4668,7 @@ section#home--events {
   }
 }
 .essay {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .essay .btn {
   color: #8fba5c;
@@ -4726,7 +4731,7 @@ section#home--events {
 }
 @media screen and (min-width: 980px) {
   .essay#essay-2 .wrapper {
-    border-left: 1px solid;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
   }
 }
 .essay.last {
@@ -4828,31 +4833,32 @@ section#home--events {
 }
 #home--tumblr p {
   color: inherit;
-}
-@media screen and (min-width: 300px) {
-  #home--tumblr {
-    min-height: 350px;
-  }
-}
-@media screen and (min-width: 740px) {
-  #home--tumblr {
-    min-height: 400px;
-  }
-}
-@media screen and (min-width: 980px) {
-  #home--tumblr {
-    min-height: 450px;
-  }
-}
-@media screen and (min-width: 1220px) {
-  #home--tumblr {
-    min-height: 500px;
-  }
+  margin-bottom: 0;
 }
 #home--tumblr-container {
   position: relative;
   z-index: 2;
   width: 100%;
+}
+@media screen and (min-width: 300px) {
+  #home--tumblr-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--tumblr-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--tumblr-container {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--tumblr-container {
+    padding: 150px 0;
+  }
 }
 #home--tumblr-gallery {
   background: #3f3f44;
@@ -4864,8 +4870,17 @@ section#home--events {
   top: 0;
   width: 100%;
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 300px) {
+  #home--tumblr .gallery-background {
+    background-position: left center;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--tumblr .gallery-background {
+    background-position: center center;
+  }
 }
 #home--thanks p {
   margin-bottom: 25px;
@@ -4898,11 +4913,11 @@ section#home--events {
 }
 #home--thanks-first .wrapper {
   padding-top: 25px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 300px) {
   #home--thanks-second .wrapper {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   }
 }
 @media screen and (min-width: 740px) {
@@ -4912,6 +4927,6 @@ section#home--events {
 }
 @media screen and (min-width: 980px) {
   #home--thanks-second .wrapper {
-    border-right: 1px solid rgba(0, 0, 0, 0.35);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
   }
 }
