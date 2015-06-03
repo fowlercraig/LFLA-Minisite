@@ -4180,7 +4180,7 @@ form textarea:focus {
     text-align: left;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 740px) {
   .text-left {
     text-align: center;
   }
@@ -4193,7 +4193,7 @@ form textarea:focus {
     text-align: left;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 740px) {
   .text-center {
     text-align: center;
   }
@@ -4206,7 +4206,7 @@ form textarea:focus {
     text-align: left;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 740px) {
   .text-right {
     text-align: right;
   }
@@ -5127,12 +5127,6 @@ hr.divider {
 }
 @media screen and (min-width: 740px) {
   .essay .wrapper {
-    padding: 50px 1.04166667%;
-    margin: 0;
-  }
-}
-@media screen and (min-width: 980px) {
-  .essay .wrapper {
     padding: 50px;
     margin: 12.5px 0;
   }
@@ -5140,9 +5134,21 @@ hr.divider {
     margin: 15px 0;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 740px) {
+  .essay#essay-1 .wrapper {
+    padding: 50px 25px;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 740px) {
   .essay#essay-2 .wrapper {
     border-left: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 740px) {
+  .essay#essay-2 .wrapper {
+    padding: 50px 25px;
+    padding-right: 0;
   }
 }
 .essay.last {

@@ -49,13 +49,6 @@
 
     @media @tablet {
 
-      padding:  @spaced*2 @fs-grid-gutter;
-      margin: 0;
-
-    }
-
-    @media @desktop {
-
       padding: @spaced*2;
       margin: @spaced/2 0;
 
@@ -67,11 +60,27 @@
 
   }
 
+  &#essay-1 {
+    @media @tablet {
+      .wrapper {
+        padding:  @spaced*2 @spaced;
+        padding-left: 0;
+      }
+    }
+  }
+
   &#essay-2 {
 
-    @media @desktop {
+    @media @tablet {
       .wrapper {
         border-left: 1px solid @bordercolor;
+      }
+    }
+
+    @media @tablet {
+      .wrapper {
+        padding:  @spaced*2 @spaced;
+        padding-right: 0;
       }
     }
 
