@@ -56,7 +56,7 @@
 
   <div class="event <?php echo $eventWidth; ?> text-left" style="background-image:url(<?php echo $thumb; ?>);">
     <div class="meta">
-      <a class="wrapper cover" href="#">
+      <a class="wrapper cover" href="<?php the_sub_field('event_url'); ?>">
         <h4><?php the_sub_field('event_date'); ?></h4>
         <h3><?php the_sub_field('event_title'); ?></h3>
       </a>
