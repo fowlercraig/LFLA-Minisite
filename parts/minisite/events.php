@@ -1,6 +1,8 @@
 <header>
   <h3 class="section-title"><?php the_field('section_title_events'); ?></h3>
+  <?php if(get_field('more_events_toggle')): ?>
   <a id="btnCalendar" class="btn btn-outlined btn-sm">View Full Calendar</a>
+  <?php endif; ?>
   <?php if(get_field('section_desc_events')): ?>
   <div class="desc">
     <?php the_field('section_desc_events'); ?>
