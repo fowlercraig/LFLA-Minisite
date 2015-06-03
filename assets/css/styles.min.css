@@ -4425,7 +4425,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 3;
-  z-index: 5;
+  z-index: 15;
 }
 p {
   font-family: 'Caslon', 'Times', arial;
