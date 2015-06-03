@@ -4827,7 +4827,7 @@ section#home--main {
   }
 }
 #splash--check .wrapper {
-  background: url(../assets/img/banner-bg.png);
+  background: url(../../assets/img/banner-bg.png);
   background-repeat: no-repeat;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -5235,7 +5235,6 @@ hr.divider {
   border: 0!important;
   background: #3f3f44;
   margin-top: -1px;
-  overflow: hidden;
   color: #ffffff;
 }
 #home--tumblr h3.section-title {
@@ -5249,7 +5248,7 @@ hr.divider {
 #home--tumblr-container {
   position: relative;
   width: 100%;
-  z-index: 5;
+  z-index: 15;
 }
 @media screen and (min-width: 300px) {
   #home--tumblr-container {
@@ -5273,6 +5272,7 @@ hr.divider {
 }
 #home--tumblr-gallery {
   background: #3f3f44;
+  position: relative;
 }
 #home--tumblr .gallery-background {
   height: 100%;

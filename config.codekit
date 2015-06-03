@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/css\/style.min.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/style.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/css\/styles.min.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -6333,7 +6342,7 @@
 		},
 	"\/src\/css\/site.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/css\/site.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -6750,12 +6759,12 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
-		"relativeURLS": 0,
+		"relativeURLS": 1,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
-		"strictImports": 0,
+		"strictImports": 1,
 		"strictMath": 0,
-		"strictUnits": 0
+		"strictUnits": 1
 		},
 	"\/src\/less\/site\/_essays.less": {
 		"allowInsecureImports": 0,
@@ -7090,7 +7099,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "liveanddine.lfla.dev",
+	"externalServerAddress": "livedine.dev",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,
