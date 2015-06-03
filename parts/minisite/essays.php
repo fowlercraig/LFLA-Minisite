@@ -1,5 +1,10 @@
 <header>
   <h3 class="section-title"><?php the_field('section_title_essays'); ?></h3>
+  <?php if(get_field('section_desc_essays')): ?>
+  <div class="desc">
+    <?php the_field('section_desc_essays'); ?>
+  </div>
+  <?php endif; ?>
 </header>
 
 <div class="fs-row">

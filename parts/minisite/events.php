@@ -1,6 +1,11 @@
 <header>
   <h3 class="section-title"><?php the_field('section_title_events'); ?></h3>
   <a id="btnCalendar" class="btn btn-outlined btn-sm">View Full Calendar</a>
+  <?php if(get_field('section_desc_events')): ?>
+  <div class="desc">
+    <?php the_field('section_desc_events'); ?>
+  </div>
+  <?php endif; ?>
 </header>
 
 <div class="fs-row">
@@ -52,11 +57,21 @@
 
     }
 
+    if (get_sub_field('event_url')){
+
+      $eventLink = get_sub_field('event_url');
+
+    } else {
+
+      $eventLink = '#';
+
+    }
+
   ?>
 
   <div class="event <?php echo $eventWidth; ?> text-left" style="background-image:url(<?php echo $thumb; ?>);">
     <div class="meta">
-      <a class="wrapper cover" href="<?php the_sub_field('event_url'); ?>">
+      <a class="wrapper cover" href="<?php echo $eventLink; ?>" target="blank">
         <h4><?php the_sub_field('event_date'); ?></h4>
         <h3><?php the_sub_field('event_title'); ?></h3>
       </a>

@@ -4524,6 +4524,13 @@ body {
   line-height: 40px;
   margin: 0;
 }
+#home--wrapper > section > div > div > header .desc {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  color: #3f3f44;
+}
 #home--wrapper > section > div > div > header .btn {
   position: relative;
   top: -0.4em;
