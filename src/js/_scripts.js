@@ -12,6 +12,18 @@ function randos(){
 
 }
 
+function headerhover(){
+
+  $(".site-logo").hover(function(){
+    $("#home--header-wrapper > div").addClass('active');
+  });
+
+  $("#home--main").hover(function(){
+    $("#home--header-wrapper > div").removeClass('active');
+  });
+
+}
+
 function header(){
 
 var options = {
@@ -41,5 +53,6 @@ $(document).ready(function(){
   openEssay();
   header();
   randos();
+  headerhover();
 
 });
