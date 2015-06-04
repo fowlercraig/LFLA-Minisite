@@ -62,6 +62,14 @@
   </section>
   <?php endif; ?>
 
+  <?php if (!get_field('publish_section_lamenu')): ?>
+  <section id="home--lamenu">
+    <div class="fs-row">
+      <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/mylamenu.php' );?></div>
+    </div>
+  </section>
+  <?php endif; ?>
+
   <section id="home--tumblr">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/tumblr.php' );?></div>

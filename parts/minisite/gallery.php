@@ -12,7 +12,7 @@
 <?php foreach( $images as $image ): ?>
 
 <div class="fs-cell fs-lg-2 fs-md-2 fs-sm 3">
-<a href="<?php echo $image['url']; ?>">
+<a href="<?php echo $image['url']; ?>" class="popup">
 <img src="<?php echo $image['sizes']['gallery-sm']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
 </a>
 </div>

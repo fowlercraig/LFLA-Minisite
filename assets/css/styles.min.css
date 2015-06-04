@@ -4336,7 +4336,7 @@ h2 {
   font-weight: 400;
   height: 44px;
   padding: 0 25px;
-  line-height: 34px;
+  line-height: 44px;
 }
 .btn.btn-sm {
   font-size: 12px;
@@ -5630,5 +5630,103 @@ hr.divider {
 @media screen and (min-width: 980px) {
   #home--thanks-second .wrapper {
     border-right: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+#home--lamenu {
+  position: relative;
+  border: 0!important;
+  background: #000;
+  margin-top: -1px;
+  overflow: hidden;
+  color: #ffffff;
+}
+#home--lamenu-bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+#home--lamenu h1 {
+  color: #f3903d;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#home--lamenu p {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  color: #f3903d;
+}
+#home--lamenu header p {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  color: #f3903d;
+}
+#home--lamenu .btn-lg {
+  border-radius: 22px;
+  border: 2px solid #f3903d;
+  color: #f3903d;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  margin: 0 5px;
+}
+#home--lamenu h3.section-title {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+#home--lamenu p {
+  color: inherit;
+  margin-bottom: 0;
+}
+#home--lamenu-container {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--lamenu-container {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--lamenu-container {
+    padding: 150px 0;
+  }
+}
+#home--lamenu-gallery {
+  background: #3f3f44;
+}
+#home--lamenu .gallery-background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu .gallery-background {
+    background-position: left center;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu .gallery-background {
+    background-position: center center;
   }
 }

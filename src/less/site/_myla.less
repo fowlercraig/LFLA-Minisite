@@ -1,0 +1,94 @@
+#home--lamenu {
+
+  position: relative;
+  border: 0!important;
+  background: #000;
+  margin-top: -1px;
+  overflow: hidden;
+
+  &-bg {
+    .cover();
+  }
+
+  h1 {
+    color: @orange;
+    .gotham(900);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  p {
+    .gotham(300);
+    color: @orange;
+  }
+
+  header p {
+   .gotham(300);
+    color: @orange;
+  }
+
+  .btn-lg {
+    border-radius: 22px;
+    border: 2px solid @orange;
+    color: @orange;
+    text-transform: uppercase;
+    .font_size(15);
+    margin: 0 5px;
+  }
+
+  h3.section-title{
+    color: @white;
+    margin-bottom: 0;
+  }
+
+  color: @white;
+
+  p {
+    color: inherit;
+    margin-bottom: 0;
+  }
+
+  &-container {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+
+    @media @min {
+      padding: @spaced*5 0;
+    }
+
+    @media @tablet {
+      padding: @spaced*5 0;
+    }
+
+    @media @desktop {
+      padding: @spaced*4 0;
+    }
+
+    @media @max {
+      padding: @spaced*6 0;
+    }
+
+  }
+
+  &-gallery {
+    background: @black;
+    //opacity: .35;
+  }
+
+  .gallery-background {
+    .cover();
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media @min {
+      background-position: left center;
+    }
+
+    @media @tablet {
+      background-position: center center;
+    }
+
+  }
+
+}
