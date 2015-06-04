@@ -19,7 +19,8 @@ section#home--main {
 
 #splash--title h2 {
   margin-top: @spaced;
-  font-family: 'franklin-gothic-urw-cond';
+  .gotham(500);
+  //font-family: 'franklin-gothic-urw-cond';
 
   @media @min {
     .font_size(24);
@@ -53,7 +54,7 @@ section#home--main {
   .font_size(23);
   font-family: @font-fam-titles;
   color: @orange;
-  p { color: inherit; font-size: inherit;}
+  p { color: inherit; font-size: inherit; font-family: inherit;}
 
   @media @min {
     text-align: center;
@@ -106,7 +107,11 @@ section#home--main {
 #splash--empty {
 
   .font_size(23);
-  font-family: 'franklin-gothic-urw-cond';
+  .sentinel();
+
+  p {
+    font-family: inherit;
+  }
 
   @media @min {
     text-align: center;
@@ -133,7 +138,7 @@ section#home--main {
   }
 
   .wrapper {
-    background: url(../../assets/img/banner-bg.png);
+    background: url(/assets/img/banner-bg.png);
     background-repeat: no-repeat;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -171,7 +176,7 @@ section#home--main {
 #splash--links {
 
 
-  font-family: 'franklin-gothic-urw-cond';
+  //font-family: 'franklin-gothic-urw-cond';
   text-align: center;
   text-transform: uppercase;
 
@@ -204,7 +209,7 @@ section#home--main {
 
 #splash--follow {
 
-  font-family: "Sentinel", sans-serif;
+  .sentinel();
   text-align: center;
 
   color: @orange;

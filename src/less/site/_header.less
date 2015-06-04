@@ -59,6 +59,10 @@
     -moz-transition:all 300ms ease-in-out;
     transition:all 300ms ease-in-out;
 
+    #home--header-logo {
+      display: none;
+    }
+
     a {
 
       color: @black;
@@ -102,12 +106,37 @@
   }
 
   &-logo {
-    width: 60px;
+
     background: url(/assets/img/lfla--logo.png);
     background-size: cover;
     background-position: center center;
     text-indent: -9999px;
-    margin-right: @spaced/2;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 20px;
+    top: 11px;
+
+    @media @min {
+      display: none;
+    }
+
+    @media @desktop {
+      display: block;
+    }
+
+    &-mobile {
+
+      background: url(/assets/img/lfla--logo.png);
+      background-size: cover;
+      background-position: center center;
+      text-indent: -9999px;
+      position: relative;
+      width: 60px;
+      margin-right: @spaced/2;
+
+    }
+
   }
 
 }
