@@ -99,10 +99,8 @@
     left: auto;
     pointer-events: none;
     opacity: 0;
-    text-align: left;
 
     right: -20px;
-
 
     @media @min {
       width: 100%;
@@ -127,6 +125,22 @@
 
     }
 
+    header {
+
+      border-bottom: none!important;
+      margin-bottom: @spaced;
+
+      h2 {
+        .gotham(900);
+        .font_size(24);
+        letter-spacing: 1px;
+        color: @teal;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+    }
+
     p,h1,h2,h3,h4,h5 {
       color: @textGray;
     }
@@ -136,6 +150,15 @@
       margin-left: 15px;
       box-shadow: 0 0 15px @black25;
       background: @white;
+
+      @media @min {
+        padding: @spaced;
+      }
+
+      @media @tablet {
+        padding: @spaced*2;
+      }
+
     }
 
     &.fixed {

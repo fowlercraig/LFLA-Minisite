@@ -5195,7 +5195,6 @@ hr.divider {
   left: auto;
   pointer-events: none;
   opacity: 0;
-  text-align: left;
   right: -20px;
 }
 @media screen and (min-width: 300px) {
@@ -5222,6 +5221,20 @@ hr.divider {
   pointer-events: auto;
   opacity: 1;
 }
+.essay.full header {
+  border-bottom: none!important;
+  margin-bottom: 25px;
+}
+.essay.full header h2 {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #70ad94;
+  text-align: center;
+  text-transform: uppercase;
+}
 .essay.full p,
 .essay.full h1,
 .essay.full h2,
@@ -5235,6 +5248,16 @@ hr.divider {
   margin-left: 15px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   background: #ffffff;
+}
+@media screen and (min-width: 300px) {
+  .essay.full .wrapper {
+    padding: 25px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .essay.full .wrapper {
+    padding: 50px;
+  }
 }
 .essay.full.fixed {
   position: fixed;
