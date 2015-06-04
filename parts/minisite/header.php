@@ -8,7 +8,7 @@
     </div>
     <div id="home--header-lower" class="fs-cell fs-lg-12 fs-md-hide fs-sm-hide text-center fs-centered">
       <?php if( have_rows('navigation_lfla') ): $i = 0; while ( have_rows('navigation_lfla') ) : the_row(); ?>
-        <a href="<?php the_sub_field('nav_url'); ?>" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a>
+        <a href="<?php the_sub_field('nav_url'); ?>" target="blank" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a>
       <?php endwhile; endif; ?>
     </div>
   </div>

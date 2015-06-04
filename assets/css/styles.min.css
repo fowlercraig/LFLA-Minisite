@@ -4658,6 +4658,8 @@ section#home--thanks {
 }
 #home--header.banner--clone #home--header-logo {
   display: none;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
 }
 #home--header.banner--clone a {
   color: #3f3f44;
@@ -4687,6 +4689,15 @@ section#home--thanks {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
+}
+#home--header.banner--stick #home--header-logo {
+  visibility: visible;
+  -webkit-transition: 300ms ease;
+          transition: 300ms ease;
+  display: block;
+  top: 0;
+  height: 60px;
+  width: 60px;
 }
 #home--header-logo {
   background: url(/assets/img/lfla--logo.png);

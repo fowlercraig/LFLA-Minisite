@@ -36,6 +36,7 @@ var options = {
     onInit: function() {
       smoothScroll();
       mobileNav();
+      headerhover();
     },
     onUnstick: function () {
       $('#mobile-menu').removeClass('open');
