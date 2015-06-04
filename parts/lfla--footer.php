@@ -1,3 +1,5 @@
+<?php $theURL = 'http://lfla.org'; ?>
+
 <div id="footer-modules">
   <div class="fs-row">
 
@@ -9,7 +11,7 @@
           <div class="inner">
             <h3 class="footer-module-title"><a href="/support-us/become-a-member/">Become a Member</a></h3>
             <p>Join a community of Los Angeles Public Library supporters.</p>
-            <a href="/support-us/become-a-member/" class="button">Learn More</a>
+            <a href="<?php echo $theURL; ?>/support-us/become-a-member/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -24,7 +26,7 @@
           <div class="inner">
             <h3 class="footer-module-title"><a href="/about/">About Us</a></h3>
             <p>Learn more about the Library Foundation.</p>
-            <a href="/about/" class="button">Learn More</a>
+            <a href="<?php echo $theURL; ?>/about/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -39,7 +41,7 @@
           <div class="inner">
             <h3 class="footer-module-title"><a href="/library-store/">The Library Store</a></h3>
             <p>Shop our collection of literary gifts and goods.</p>
-            <a href="/library-store/" class="button">Learn More</a>
+            <a href="<?php echo $theURL; ?>/library-store/" class="button">Learn More</a>
           </div>
         </div>
       </div>
@@ -54,7 +56,7 @@
           <div class="inner">
             <h3 class="footer-module-title"><a href="/what-we-fund/">What We Fund</a></h3>
             <p>Enriching the programs of the Los Angeles Public Library.</p>
-            <a href="/what-we-fund/" class="button">Learn More</a>
+            <a href="<?php echo $theURL; ?>/what-we-fund/" class="button">Learn More</a>
           </div>
         </div>
       </div>
