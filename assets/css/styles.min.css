@@ -4190,7 +4190,7 @@ form textarea:focus {
 }
 @media screen and (min-width: 740px) {
   .text-left {
-    text-align: center;
+    text-align: left;
   }
 }
 .text-center {
@@ -4422,6 +4422,53 @@ body {
   width: 100%;
   z-index: 3;
 }
+#footer-modules h3.footer-module-title {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 500;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 1220px) {
+  #footer-modules h3.footer-module-title {
+    margin-top: 19px;
+  }
+}
+#footer-modules p {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 200;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #666666;
+}
+@media screen and (min-width: 980px) {
+  #footer-modules p {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #footer-modules p {
+    font-size: 13px;
+    font-size: 0.8125rem;
+  }
+}
+#footer-modules .button {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+#foot {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+#foot p {
+  font-family: inherit;
+  font-size: inherit;
+}
+#foot li:before {
+  display: none;
+}
 .btn {
   font-family: 'Gotham', 'Helvetica', arial;
   font-weight: 500;
@@ -4561,6 +4608,9 @@ section#home--thanks {
   background: #ede8e4;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
+#home--header .btn {
+  border: none;
+}
 @media screen and (min-width: 980px) {
   #home--header-wrapper {
     height: 60px;
@@ -4617,7 +4667,7 @@ section#home--thanks {
     display: none;
   }
 }
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 740px) {
   #home--header {
     display: block;
   }
@@ -4690,14 +4740,16 @@ section#home--thanks {
   -ms-transform: translateY(0%);
   transform: translateY(0%);
 }
-#home--header.banner--stick #home--header-logo {
+#home--header.banner--stick #home--header-logo-mobile {
   visibility: visible;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
   display: block;
   top: 0;
-  height: 60px;
-  width: 60px;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
 }
 #home--header-logo {
   background: url(/assets/img/lfla--logo.png);
@@ -4711,6 +4763,11 @@ section#home--thanks {
   top: 11px;
 }
 @media screen and (min-width: 300px) {
+  #home--header-logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) {
   #home--header-logo {
     display: none;
   }
@@ -5376,7 +5433,7 @@ hr.divider {
 #home--tumblr {
   position: relative;
   border: 0!important;
-  background: #3f3f44;
+  background: #000;
   margin-top: -1px;
   overflow: hidden;
   color: #ffffff;

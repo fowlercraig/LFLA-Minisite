@@ -1,0 +1,45 @@
+#footer-modules {
+
+  h3.footer-module-title {
+    .gotham(500);
+    .font_size(15);
+
+    @media @max {
+      margin-top: 19px;
+    }
+
+  }
+
+  p {
+    .gotham(200);
+    .font_size(13);
+    color: @textGray;
+
+    @media @desktop {
+      .font_size(12);
+    }
+    @media @max {
+      .font_size(13);
+    }
+  }
+
+  .button {
+    .font_size(12);
+  }
+
+}
+
+#foot {
+
+  .gotham(300);
+  .font_size(12);
+
+  p { font-family: inherit; font-size: inherit;}
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+
+}

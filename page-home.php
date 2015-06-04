@@ -90,6 +90,11 @@
     </div>
   </footer>
 
+  <div class="fs-row">
+    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered"><?php include locate_template('parts/lfla--footer.php' ); ?></div>
+
 </div>
+
+
 
 <?php get_footer(); ?>

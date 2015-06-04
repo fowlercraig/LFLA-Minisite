@@ -1,5 +1,6 @@
 // Formstone Components
 
+// @codekit-prepend "../bower_components/jquery/dist/jquery.min.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/core.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/touch.js"
 // @codekit-prepend "../bower_components/formstone/dist/js/transition.js"

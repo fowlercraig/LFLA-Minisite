@@ -5,6 +5,10 @@
   background: @maincolor;
   border-bottom: 1px solid @bordercolor;
 
+  .btn {
+    border: none;
+  }
+
   &-wrapper {
 
     @media @desktop {
@@ -62,7 +66,7 @@
     display: none;
   }
 
-  @media @desktop {
+  @media @tablet {
     display: block;
   }
 
@@ -147,13 +151,15 @@
     -ms-transform:translateY(0%);
     transform:translateY(0%);
 
-    #home--header-logo {
+    #home--header-logo-mobile {
       visibility: visible;
       transition: 300ms ease;
       display: block;
       top: 0;
-      height: 60px;
-      width: 60px;
+      float: left;
+      height: 40px;
+      width: 40px;
+      margin-top: 10px;
     }
 
   }
@@ -171,6 +177,10 @@
     top: 11px;
 
     @media @min {
+      display: none;
+    }
+
+    @media @tablet {
       display: none;
     }
 
