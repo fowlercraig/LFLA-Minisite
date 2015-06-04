@@ -68,13 +68,11 @@
     </div>
   </section>
 
-  <?php if (!get_field('publish_section_gallery')): ?>
   <section id="home--gallery">
     <div class="fs-row">
       <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/gallery.php' );?></div>
     </div>
   </section>
-  <?php endif; ?>
 
   <?php if (!get_field('publish_section_hash')): ?>
   <section id="home--social">
