@@ -27,6 +27,6 @@
   </div>
 </div>
 <div id="home--header-social">
-  <a href="#" class="btn btn-nav"><i class="ss-social-circle ss-icon">twitter</i></a>
-  <a href="#" class="btn btn-nav"><i class="ss-social-circle ss-icon">facebook</i></a>
+  <a href="https://twitter.com/home?status=<?php the_field('share_twitter'); ?>" class="btn btn-nav"><i class="ss-social-circle ss-icon">twitter</i></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_field('share_facebook'); ?>" class="btn btn-nav"><i class="ss-social-circle ss-icon">facebook</i></a>
 </div>
