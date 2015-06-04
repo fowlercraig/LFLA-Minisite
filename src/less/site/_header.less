@@ -5,6 +5,18 @@
   background: @maincolor;
   border-bottom: 1px solid @bordercolor;
 
+  .text-center {
+
+    @media @min {
+      text-align: left;
+    }
+
+    @media @desktop {
+      text-align: center;
+    }
+
+  }
+
   @media @min {
     display: none;
   }
@@ -87,6 +99,15 @@
     -webkit-transform:translateY(0%);
     -ms-transform:translateY(0%);
     transform:translateY(0%)
+  }
+
+  &-logo {
+    width: 60px;
+    background: url(/assets/img/lfla--logo.png);
+    background-size: cover;
+    background-position: center center;
+    text-indent: -9999px;
+    margin-right: @spaced/2;
   }
 
 }

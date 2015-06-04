@@ -4562,6 +4562,16 @@ section#home--thanks {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 @media screen and (min-width: 300px) {
+  #home--header .text-center {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--header .text-center {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 300px) {
   #home--header {
     display: none;
   }
@@ -4633,6 +4643,14 @@ section#home--thanks {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
+}
+#home--header-logo {
+  width: 60px;
+  background: url(/assets/img/lfla--logo.png);
+  background-size: cover;
+  background-position: center center;
+  text-indent: -9999px;
+  margin-right: 12.5px;
 }
 #menuBtn {
   width: 40px;
