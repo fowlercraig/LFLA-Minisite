@@ -13,7 +13,7 @@
 
 <div class="fs-cell fs-lg-3 fs-md-2 fs-sm 3">
 <a href="<?php echo $image['url']; ?>">
-<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
+<img src="<?php echo $image['sizes']['gallery-sm']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive" />
 </a>
 </div>
 
