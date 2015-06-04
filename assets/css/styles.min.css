@@ -4906,6 +4906,11 @@ section#home--main {
   font-size: inherit;
   font-family: inherit;
 }
+#splash--desc strong {
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
 @media screen and (min-width: 300px) {
   #splash--desc {
     text-align: center;
@@ -4942,10 +4947,11 @@ section#home--main {
   }
 }
 #splash--social span {
-  font-family: 'franklin-gothic-urw-cond';
+  font-family: 'Gotham', 'Helvetica', arial !important;
+  font-weight: 900 !important;
   text-transform: uppercase;
-  font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 12px !important;
+  font-size: 0.75rem !important;
   display: none;
   color: #8fba5c;
   margin-top: 20px;

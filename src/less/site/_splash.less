@@ -55,6 +55,7 @@ section#home--main {
   font-family: @font-fam-titles;
   color: @orange;
   p { color: inherit; font-size: inherit; font-family: inherit;}
+  strong { color: inherit; font-size: inherit; font-family: inherit;}
 
   @media @min {
     text-align: center;
@@ -87,12 +88,13 @@ section#home--main {
     }
   }
   span {
-    font-family: 'franklin-gothic-urw-cond';
+    .gotham(900)!important;
     text-transform: uppercase;
-    .font_size(15);
+    .font_size(12)!important;
     display: none;
     color: @green;
     margin-top: @spaced/1.25;
+
     @media @desktop {
       display: block;
       position: absolute;

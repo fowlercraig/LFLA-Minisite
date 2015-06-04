@@ -19,7 +19,7 @@
 
     // Limit to 4 Events
 
-    $i++; if( $i > 4 ) { break; }
+    $i++; if( $i > 6 ) { break; }
 
     $eventWidth = 'fs-cell fs-lg-3 fs-md-half fs-sm-half fs-xs-3 fs-contained normal';
     $backbone   = '/assets/img/800x800.gif';

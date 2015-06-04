@@ -4,7 +4,7 @@
       <div class="fs-row">
         <div id="splash--title"  class="fs-cell-padded fs-all-12 text-center">
           <img src="assets/img/ld-logo.png" class="img-responsive" />
-          <h2>Menus from the Collection of the <br>Los Angeles Public Library</h2>
+          <h2>Menus from the Collection <br>of the Los Angeles Public Library</h2>
         </div>
 
         <hr class="divider fs-cell fs-all-12">
