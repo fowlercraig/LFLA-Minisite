@@ -4586,6 +4586,9 @@ body {
   font-size: 1.0625rem;
   color: #3f3f44;
 }
+#home--wrapper > section > div > div > header .desc a {
+  color: #3f3f44;
+}
 #home--wrapper > section > div > div > header .btn {
   position: relative;
   top: -0.4em;
@@ -4677,6 +4680,13 @@ section#home--thanks {
   font-family: 'Gotham', 'Helvetica', arial;
   font-weight: 500;
 }
+@media screen and (min-width: 300px) {
+  #home--header a {
+    font-size: 12px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+}
 @media screen and (min-width: 980px) {
   #home--header a {
     font-size: 14px;
@@ -4707,9 +4717,25 @@ section#home--thanks {
   transition: all 300ms ease-in-out;
 }
 #home--header.banner--clone #home--header-logo {
-  display: none;
+  visibility: visible;
   -webkit-transition: 300ms ease;
           transition: 300ms ease;
+  display: block;
+  top: 0;
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 300px) {
+  #home--header.banner--clone #home--header-logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--header.banner--clone #home--header-logo {
+    display: block;
+  }
 }
 #home--header.banner--clone a {
   color: #3f3f44;
@@ -4739,17 +4765,6 @@ section#home--thanks {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-}
-#home--header.banner--stick #home--header-logo-mobile {
-  visibility: visible;
-  -webkit-transition: 300ms ease;
-          transition: 300ms ease;
-  display: block;
-  top: 0;
-  float: left;
-  height: 40px;
-  width: 40px;
-  margin-top: 10px;
 }
 #home--header-logo {
   background: url(/assets/img/lfla--logo.png);
@@ -4783,8 +4798,11 @@ section#home--thanks {
   background-position: center center;
   text-indent: -9999px;
   position: relative;
-  width: 60px;
+  width: 40px;
+  height: 40px;
   margin-right: 12.5px;
+  top: 10px;
+  float: left;
 }
 #menuBtn {
   width: 40px;
@@ -4835,6 +4853,7 @@ section#home--thanks {
   color: #ffffff;
   display: block;
   text-align: left;
+  border: 0;
   height: 40px;
   line-height: 40px;
 }
@@ -5647,6 +5666,8 @@ hr.divider {
   top: 0;
   width: 100%;
   z-index: 3;
+  background-size: cover;
+  background-position: center center;
 }
 #home--lamenu h1 {
   color: #f3903d;
@@ -5660,6 +5681,10 @@ hr.divider {
   font-weight: 300;
   color: #f3903d;
 }
+#home--lamenu p a {
+  color: inherit;
+  border-bottom-color: #f3903d;
+}
 #home--lamenu header p {
   font-family: 'Gotham', 'Helvetica', arial;
   font-weight: 300;
@@ -5672,7 +5697,131 @@ hr.divider {
   text-transform: uppercase;
   font-size: 15px;
   font-size: 0.9375rem;
-  margin: 0 5px;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu .btn-lg {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu .btn-lg {
+    margin: 0 5px;
+  }
+}
+#home--lamenu h3.section-title {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+#home--lamenu p {
+  color: inherit;
+  margin-bottom: 0;
+}
+#home--lamenu-container {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu-container {
+    padding: 125px 0;
+  }
+}
+@media screen and (min-width: 980px) {
+  #home--lamenu-container {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  #home--lamenu-container {
+    padding: 150px 0;
+  }
+}
+#home--lamenu-gallery {
+  background: #3f3f44;
+}
+#home--lamenu .gallery-background {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu .gallery-background {
+    background-position: left center;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu .gallery-background {
+    background-position: center center;
+  }
+}
+#home--lamenu {
+  position: relative;
+  border: 0!important;
+  background: #000;
+  margin-top: -1px;
+  overflow: hidden;
+  color: #ffffff;
+}
+#home--lamenu-bg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  background-size: cover;
+  background-position: center center;
+}
+#home--lamenu h1 {
+  color: #f3903d;
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#home--lamenu p {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  color: #f3903d;
+}
+#home--lamenu p a {
+  color: inherit;
+  border-bottom-color: #f3903d;
+}
+#home--lamenu header p {
+  font-family: 'Gotham', 'Helvetica', arial;
+  font-weight: 300;
+  color: #f3903d;
+}
+#home--lamenu .btn-lg {
+  border-radius: 22px;
+  border: 2px solid #f3903d;
+  color: #f3903d;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 300px) {
+  #home--lamenu .btn-lg {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 740px) {
+  #home--lamenu .btn-lg {
+    margin: 0 5px;
+  }
 }
 #home--lamenu h3.section-title {
   color: #ffffff;

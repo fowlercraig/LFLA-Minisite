@@ -4,8 +4,8 @@
 // @codekit-prepend "site/_mobilenav.js"
 
 function popups(){
-  $('#home--gallery').magnificPopup({
-    delegate: '.popup',
+  $('#home--gallery-gallery').magnificPopup({
+    delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     mainClass: 'mfp-img-mobile',

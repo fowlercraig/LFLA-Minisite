@@ -1,6 +1,6 @@
 <div id="home--lamenu-container" class="fs-grid">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-centered text-center">
+    <div class="fs-cell fs-lg-8 fs-md-6 fs-sm-3 fs-centered text-center">
       <header>
         <?php the_field('myla_description'); ?>
       </header>

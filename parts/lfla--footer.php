@@ -87,8 +87,9 @@
 </div>
 <hr style="height:1px; background:#ddd;" class="fs-cell fs-all-full">
 <div class="fs-cell fs-all-full">
-© 2015 Library Foundation of Los Angeles |
-<a href="http://lfla.org/contact/">Contact Us</a>
+  © 2015 Library Foundation of Los Angeles |
+  <a href="http://lfla.org/contact/">Contact Us</a>
+  <a class="right" target="blank" href="http://wearegiants.com">Made by WAG.</a>
 </div>
 </div>
 </footer><!--Footer-->

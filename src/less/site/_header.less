@@ -75,6 +75,11 @@
     color: @black;
     .gotham(500);
 
+    @media @min {
+      .font_size(12);
+      letter-spacing: 1px;
+    }
+
     @media @desktop {
       .font_size(14);
       letter-spacing: 1px;
@@ -105,9 +110,23 @@
     transition:all 300ms ease-in-out;
 
     #home--header-logo {
-
-      display: none;
+      visibility: visible;
       transition: 300ms ease;
+      display: block;
+      top: 0;
+      float: left;
+      height: 40px;
+      width: 40px;
+      margin-top: 10px;
+
+      @media @min {
+        display: none;
+      }
+
+      @media @desktop {
+        display: block;
+      }
+
     }
 
     a {
@@ -151,17 +170,6 @@
     -ms-transform:translateY(0%);
     transform:translateY(0%);
 
-    #home--header-logo-mobile {
-      visibility: visible;
-      transition: 300ms ease;
-      display: block;
-      top: 0;
-      float: left;
-      height: 40px;
-      width: 40px;
-      margin-top: 10px;
-    }
-
   }
 
   &-logo {
@@ -195,9 +203,11 @@
       background-position: center center;
       text-indent: -9999px;
       position: relative;
-      width: 60px;
+      width: 40px;
+      height: 40px;
       margin-right: @spaced/2;
-
+      top: 10px;
+      float: left;
     }
 
   }
@@ -257,6 +267,7 @@
       @menuHeight: 40px;
       display: block;
       text-align: left;
+      border: 0;
       height: @menuHeight;
       line-height: @menuHeight;
       &:last-child {

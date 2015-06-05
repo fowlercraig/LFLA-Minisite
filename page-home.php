@@ -46,14 +46,6 @@
   </section>
   <?php endif; ?>
 
-  <?php if (!get_field('publish_section_lamenu')): ?>
-  <section id="home--lamenu">
-    <div class="fs-row">
-      <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/lamenu.php' );?></div>
-    </div>
-  </section>
-  <?php endif; ?>
-
   <?php if (!get_field('publish_section_rr')): ?>
   <section id="home--rr">
     <div class="fs-row">

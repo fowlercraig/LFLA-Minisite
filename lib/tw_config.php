@@ -8,7 +8,7 @@ $settings = array(
   ),
 
   'default_scripts'        => array(
-    //'jquery-g',
+    'jquery-g',
     'scripts',
   ),
 
