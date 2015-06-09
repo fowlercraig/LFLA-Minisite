@@ -125,6 +125,34 @@
 
     }
 
+    blockquote {
+      background: @bgGray;
+      margin: 0;
+      height: 0px;
+      overflow: hidden;
+
+      @media @min {
+        padding: @spaced @spaced*2;
+        margin: 0 -@spaced;
+      }
+
+      @media @tablet {
+        padding: @spaced*2 @spaced*4;
+        margin: 0 -@spaced*2;
+      }
+
+    }
+
+    p, ul, li {
+
+      .serif(300);
+      padding-left: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
     header {
 
       border-bottom: none!important;

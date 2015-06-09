@@ -54,6 +54,14 @@
   </section>
   <?php endif; ?>
 
+  <?php if (!get_field('publish_section_videos')): ?>
+  <section id="home--videos">
+    <div class="fs-row">
+      <div class="<?php echo $sectionWidth;?>"><?php include locate_template('parts/minisite/videos.php' );?></div>
+    </div>
+  </section>
+  <?php endif; ?>
+
   <?php if (!get_field('publish_section_lamenu')): ?>
   <section id="home--lamenu">
     <div class="fs-row">

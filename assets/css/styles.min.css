@@ -4488,6 +4488,10 @@ p {
   font-weight: 300;
   color: #3f3f44;
 }
+p strong {
+  font-weight: 600;
+  color: inherit;
+}
 @media screen and (min-width: 300px) {
   p {
     font-size: 20px;
@@ -4575,8 +4579,6 @@ body {
 }
 #home--wrapper > section > div > div > header .section-title {
   display: inline-block;
-  height: 30px;
-  line-height: 40px;
   margin: 0;
 }
 #home--wrapper > section > div > div > header .desc {
@@ -4599,11 +4601,22 @@ section#home--events {
   padding-bottom: 0;
   border-bottom: 0;
 }
-#home--essays header {
+section#home--essays {
+  border-bottom: 0;
+}
+section#home--essays header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 section#home--thanks {
   border-bottom: 0;
+}
+section#home--rr {
+  padding-top: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+section#home--videos {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #home--header {
   position: relative;
@@ -4993,6 +5006,10 @@ section#home--main {
   font-size: 1.4375rem;
   font-family: 'Sentinel', 'Times', georgia;
 }
+#splash--empty strong {
+  font-weight: 600;
+  color: inherit;
+}
 #splash--empty p {
   font-family: inherit;
 }
@@ -5094,6 +5111,10 @@ section#home--main {
   font-family: 'Sentinel', 'Times', georgia;
   text-align: center;
   color: #f3903d;
+}
+#splash--follow strong {
+  font-weight: 600;
+  color: inherit;
 }
 #splash--follow span {
   font-size: 16px;
@@ -5384,6 +5405,43 @@ hr.divider {
   pointer-events: auto;
   opacity: 1;
 }
+.essay.full blockquote {
+  background: #f2f2f2;
+  margin: 0;
+  height: 0px;
+  overflow: hidden;
+}
+@media screen and (min-width: 300px) {
+  .essay.full blockquote {
+    padding: 25px 50px;
+    margin: 0 -25px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .essay.full blockquote {
+    padding: 50px 100px;
+    margin: 0 -50px;
+  }
+}
+.essay.full p,
+.essay.full ul,
+.essay.full li {
+  font-family: 'Caslon', 'Times', georgia;
+  font-style: '@font-style';
+  font-weight: 300;
+  padding-left: 0;
+}
+.essay.full p strong,
+.essay.full ul strong,
+.essay.full li strong {
+  font-weight: 600;
+  color: inherit;
+}
+.essay.full p:before,
+.essay.full ul:before,
+.essay.full li:before {
+  display: none;
+}
 .essay.full header {
   border-bottom: none!important;
   margin-bottom: 25px;
@@ -5655,7 +5713,6 @@ hr.divider {
   position: relative;
   border: 0!important;
   background: #000;
-  margin-top: -1px;
   overflow: hidden;
   color: #ffffff;
 }
