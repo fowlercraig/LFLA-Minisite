@@ -1,10 +1,17 @@
-<div id="home--videos-container" class="fs-grid">
-  <div class="fs-row">
-    <div class="fs-cell fs-lg-6 fs-md-6 fs-sm-3 fs-centered text-center">
-      <header>
-        <h3 class="section-title"><?php the_field('section_title_tumblr'); ?></h3>
-      </header>
-      <p><?php the_field('section_description_tumblr'); ?></p>
+<div class="fs-row">
+  <div class="fs-cell fs-lg-4 fs-md-2 fs-sm-3 text-left equal">
+    <div class="table">
+      <div class="cell">
+        <hr class="invisible">
+        <header>
+          <h3 class="section-title"><?php the_field('section_title_videos'); ?></h3>
+        </header>
+        <p><?php the_field('section_description_videos'); ?></p>
+      </div>
     </div>
   </div>
+  <div class="fs-cell fs-lg-8 fs-md-4 fs-sm-3 equal">
+    List of videos will go here.
+  </div>
 </div>
+

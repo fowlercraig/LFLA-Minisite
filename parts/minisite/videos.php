@@ -6,7 +6,7 @@
 
   } else {
 
-    include locate_template('/parts/minisite/videos-comingsoon.php' );
+    include locate_template('/parts/minisite/videos-visible.php' );
 
   }
 
