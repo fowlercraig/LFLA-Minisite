@@ -19,5 +19,6 @@
 // @codekit-prepend "../bower_components/headhesive.js/dist/headhesive.js"
 // @codekit-prepend "../bower_components/packery/dist/packery.pkgd.js"
 // @codekit-prepend "../bower_components/imagesloaded/imagesloaded.pkgd.min.js"
+// @codekit-prepend "../bower_components/fitvids/jquery.fitvids.js"
 
 // @codekit-append "_scripts.js"

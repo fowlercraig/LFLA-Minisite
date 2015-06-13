@@ -76,5 +76,6 @@ $(document).ready(function(){
   randos();
   headerhover();
   popups();
+  $("#home--videos").fitVids();
 
 });

@@ -5661,6 +5661,9 @@ hr.divider {
 .book:hover .cover {
   background: rgba(0, 0, 0, 0.75);
 }
+#home--videos .video {
+  margin-bottom: 25px;
+}
 #home--thanks p {
   margin-bottom: 25px;
 }
