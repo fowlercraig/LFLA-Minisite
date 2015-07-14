@@ -5939,3 +5939,27 @@ hr.divider {
     background-position: center center;
   }
 }
+.lapl-branch {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 12.5px 0;
+  position: relative;
+}
+.lapl-branch:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.lapl-branch:nth-child(4n+1):after {
+  display: none;
+}
+.lapl-header h3 {
+  margin-bottom: 12.5px;
+}
+.lapl-region {
+  padding-top: 25px;
+}

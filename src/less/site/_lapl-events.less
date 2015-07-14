@@ -1,0 +1,34 @@
+.lapl {
+
+	&-branch {
+		border-top: 1px solid @black25;
+		padding: @spaced/2 0;
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 1px;
+			background: @black25;
+		}
+		&:nth-child(4n+1) {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&-header {
+		h3 {
+			margin-bottom: @spaced/2;
+		}
+	}
+
+	&-region {
+		padding-top: @spaced;
+	}
+
+}
