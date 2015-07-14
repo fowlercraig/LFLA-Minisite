@@ -1,23 +1,30 @@
 .lapl {
 
    &-branch {
-      border-top: 1px solid @black25;
       padding: @spaced/2 0;
       position: relative;
-      &:after {
-         content: '';
-         display: block;
-         position: absolute;
-         top: 0;
-         right: 0;
-         height: 100%;
-         width: 1px;
-         background: @black25;
-      }
-      &:nth-child(4n+1) {
-         &:after {
-            display: none;
+
+      h4 {
+         margin-bottom: 0;
+         .gotham(600);
+         padding-top: 4px;
+         @media @min {
+            .font_size(14);
          }
+          @media @mobile {
+            .font_size(16);
+         }
+         letter-spacing: 1px;
+         a {
+            display: block;
+         }
+      }
+      span {
+         .gotham(400);
+         .font_size(12);
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         color: @green;
       }
    }
 
@@ -28,7 +35,8 @@
    }
 
    &-region {
-      padding-top: @spaced;
+      padding: @spaced 0;
+      border-top: 1px solid @black25;
    }
 
 }

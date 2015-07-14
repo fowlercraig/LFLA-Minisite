@@ -2,13 +2,13 @@
 <div class="fs-row">
   <div id="home--header-wrapper">
     <div id="home--header-upper" class="fs-cell fs-lg-12 fs-md-hide fs-sm-hide text-center fs-centered">
-      <?php if( have_rows('navigation') ): $i = 0; while ( have_rows('navigation') ) : the_row(); ?>
-        <?php if(get_sub_field('visible')): ?><a href="<?php the_sub_field('nav_url'); ?>" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a><?php endif; ?>
+      <?php if( have_rows('navigation', 6) ): $i = 0; while ( have_rows('navigation', 6) ) : the_row(); ?>
+        <?php if(get_sub_field('visible')): ?><a href="/<?php the_sub_field('nav_url'); ?>" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a><?php endif; ?>
       <?php endwhile; endif; ?>
     </div>
     <div id="home--header-lower" class="fs-cell fs-lg-12 fs-md-hide fs-sm-hide text-center fs-centered">
-      <?php if( have_rows('navigation_lfla') ): $i = 0; while ( have_rows('navigation_lfla') ) : the_row(); ?>
-        <a href="<?php the_sub_field('nav_url'); ?>" target="blank" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a>
+      <?php if( have_rows('navigation_lfla', 6) ): $i = 0; while ( have_rows('navigation_lfla', 6) ) : the_row(); ?>
+        <a href="/<?php the_sub_field('nav_url'); ?>" target="blank" class="btn btn-nav"><?php the_sub_field('nav_label'); ?></a>
       <?php endwhile; endif; ?>
     </div>
   </div>
