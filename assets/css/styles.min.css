@@ -5966,6 +5966,8 @@ hr.divider {
 }
 .lapl-branch h4 a {
   display: block;
+  color: #8fba5c;
+  text-decoration: underline;
 }
 .lapl-branch span {
   font-family: 'Gotham', 'Helvetica', arial;
@@ -5974,7 +5976,7 @@ hr.divider {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #8fba5c;
+  color: #3f3f44;
 }
 .lapl-header h3 {
   margin-bottom: 12.5px;
