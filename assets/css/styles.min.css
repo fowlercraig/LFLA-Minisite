@@ -5987,8 +5987,8 @@ hr.divider {
 }
 .page-content {
   padding-top: 125px;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .page-content p {
   font-size: inherit;
