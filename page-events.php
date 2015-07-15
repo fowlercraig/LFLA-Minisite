@@ -17,7 +17,7 @@
 
 <section id="home--content" class="page-content text-center">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-7 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-6 fs-md-5 fs-sm-3 fs-centered">
       <h1 class="page-title"><?php the_title(); ?></h1>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <?php the_content(); ?>
