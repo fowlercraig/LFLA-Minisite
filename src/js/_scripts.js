@@ -77,5 +77,6 @@ $(document).ready(function(){
   headerhover();
   popups();
   $("#home--videos").fitVids();
+  $(".embed_video").fitVids();
 
 });

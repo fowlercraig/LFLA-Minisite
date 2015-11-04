@@ -30,6 +30,26 @@
     </div>
   </section>
 
+  <?php if (!get_field('publish_event_recap')): ?>
+  <section id="home--recap">
+    <div class="fs-row">
+      <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
+        <header class="text-center">
+          <h3 class="section-title"><?php the_field('section_title_recap'); ?></h3>
+          <?php if(get_field('section_description_recap')): ?>
+          <div class="desc">
+            <?php the_field('section_description_recap'); ?>
+          </div>
+          <?php endif; ?>
+        </header>
+        <div class="embed_video">
+          <?php the_field('event_recap'); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php endif; ?>
+
   <?php if (!get_field('publish_section_events')): ?>
   <section id="home--events">
     <div class="fs-row">
